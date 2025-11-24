@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JAY SAI Genuine Parts - Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="jay_logo.jpg" alt="JAY SAI Logo" class="logo">
+        <div class="brand-text">
+          <h1>JAY SAI</h1>
+          <small>Genuine Parts</small>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="price-list.html">Price List</a>
+
+      </nav>
+
+      <div class="cart-btn" id="cartBtn">
+        🛒 <span id="cartCount">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>मोटर बाइक के Genuine बॉडी पार्ट्स</h2>
+      <p>Original quality, best fit — JAY SAI Genuine Parts</p>
+      <a href="#products" class="btn">Shop Now</a>
+
+      <!-- UPDATED NUMBER -->
+      <a href="https://wa.me/919049103072" class="btn outline" target="_blank">
+        WhatsApp से ऑर्डर
+      </a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products container">
+    <h2>Products</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="body kit.jpg" alt="part image 1">
+      <img src="Side Panel.jpg" alt="part image 2">
+      <img src="body kit.jpg" alt="part image 3">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact container">
+    <h2>Contact / Order</h2>
+    <div class="contact-grid">
+      <div>
+        <h3>WhatsApp से ऑर्डर करें</h3>
+        <p>सिधे मैसेज के लिए नीचे क्लिक करें:</p>
+
+        <!-- UPDATED NUMBER -->
+        <a class="btn" 
+           href="https://wa.me/919049103072?text=Hello%20JAY%20SAI%2C%20I%20want%20to%20order%20parts" 
+           target="_blank">
+          WhatsApp पर भेजें
+        </a>
+      </div>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="आपका नाम" required>
+        <input type="tel" id="phone" placeholder="मोबाइल नंबर" required>
+        <input type="email" id="email" placeholder="ईमेल (अगर हो)">
+        <textarea id="message" placeholder="आपका संदेश / ऑर्डर डिटेल"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <h3>आपकी cart</h3>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <strong>Total: ₹<span id="cartTotal">0</span></strong>
+        <div>
+          <button id="checkoutBtn" class="btn">Checkout (WhatsApp)</button>
+          <button id="clearCartBtn" class="btn outline">Clear</button>
+        </div>
+      </div>
+      <button class="close-cart" id="closeCart">✕</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 JAY SAI Genuine Parts</p>
+      <p>Location: Palanpur, Gujarat</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

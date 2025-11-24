@@ -1,0 +1,64 @@
+:root{
+  --primary:#d32f2f;
+  --accent:#009688;
+  --dark:#222;
+  --muted:#777;
+}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:var(--dark);background:#fafafa;line-height:1.4}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+
+/* Header */
+.site-header{background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.06);position:sticky;top:0;z-index:50}
+.header-inner{display:flex;align-items:center;gap:20px;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:60px;object-fit:contain}
+.brand-text h1{margin:0;font-size:20px;color:var(--accent)}
+.brand-text small{color:var(--muted)}
+.nav a{margin:0 10px;text-decoration:none;color:var(--dark);font-weight:600}
+.cart-btn{cursor:pointer;background:var(--accent);color:#fff;padding:8px 12px;border-radius:6px}
+
+/* Hero */
+.hero{background:linear-gradient(90deg,#fff 0%, #f7fff9 100%);padding:40px 20px;text-align:center;margin-top:10px;border-radius:8px}
+.hero h2{font-size:28px;margin-bottom:6px}
+.hero p{color:var(--muted);margin-bottom:14px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none;font-weight:700;margin:6px}
+.btn.outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+
+/* Products */
+.products h2{margin-top:20px;margin-bottom:10px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border-radius:8px;padding:12px;box-shadow:0 4px 12px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:10px}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+.card h3{margin:0;font-size:18px}
+.card p{color:var(--muted);margin:0}
+.card .price{font-weight:800;margin-top:6px}
+.card .actions{margin-top:auto;display:flex;gap:8px}
+.card button{flex:1;padding:8px;border-radius:6px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+.gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.contact input, .contact textarea{width:100%;padding:10px;border-radius:6px;border:1px solid #ccc;margin-bottom:8px}
+.contact form button{width:100%}
+
+/* Footer */
+.site-footer{padding:18px 0;background:#222;color:#fff;margin-top:20px;text-align:center}
+
+/* Cart Modal */
+.cart-modal{position:fixed;top:0;left:0;width:100%;height:100%;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.4);z-index:200}
+.cart-content{background:#fff;width:95%;max-width:520px;padding:20px;border-radius:8px;position:relative}
+.cart-item{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed #eee}
+.cart-item img{width:60px;height:40px;object-fit:cover;border-radius:4px}
+.cart-footer{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.close-cart{position:absolute;top:8px;right:8px;background:#eee;border:0;padding:6px;border-radius:6px;cursor:pointer}
+
+/* Responsive */
+@media(max-width:800px){
+  .contact-grid{grid-template-columns:1fr}
+  .brand-text h1{font-size:16px}
+  .logo{height:48px}
+}
